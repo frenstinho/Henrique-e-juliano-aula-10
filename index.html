@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Tropicália</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class=" p-5">
+
+        <nav class="container d-flex justify-content-between align-items-center" >
+            <img src="cantanto.jpg" class="nav-img " loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade"> 
+                <button id="botao-acessibilidade" class="btn fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
+                </div>
+            </div>
+        </nav>
+       
+    </header>
+
+
+    <main class="container my-5">
+
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Henrique e juliano</h1>
+                    <img src="boi.jpg" class="mb-3" width="563"
+                        height="278" loading="lazy">
+                    <a href="#gunsnroses"
+                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
+                        conhecer!</a>
+                </div>
+                <img src="amizade.jpg" alt="a imagem ao lado mostra henrique e juliano com sua amiga falecida marilia mendonça" title="Rock n Roll" class="img-fluid img-inicio"  width="50"
+                        height="50" loading="lazy">
+
+              </div>
+        </section>
+
+        <section id="henrique e juliano" class="my-5 pt-6 secao-henrique e juliano" aria-label="Seção explicativa sobre a vida de henrique e juliano">
+            <div class="container d-flex align-items-center ">
+                <div class="col-4 d-flex justify-content-center ">
+                    <img src="eu.jpg" class="rounded-pill" width="273" height="331" loading="lazy">
+                </div>
+                <div class="col-5">
+                    <h2>Quem são Henrique e Juliano?</h2>
+                    <p class="p-2">Henrique & Juliano são uma dupla sertaneja formada pelos irmãos Henrique e Juliano Costa, nascidos em Palmeiras de Goiás, nos anos 80. Eles começaram a carreira musical no início dos anos 2000 e se destacaram com o sucesso de músicas como "Recaídas" (2011) e "Liberdade Provisória" (2020).
+
+Com uma mistura de sertanejo tradicional e universitário, a dupla conquistou o público com letras emocionantes e shows enérgicos. Eles lançaram álbuns como "Ao Vivo em São Paulo" (2013) e "Menos é Mais" (2017), além de diversos hits.
+
+Ao longo da carreira, Henrique & Juliano receberam prêmios e se tornaram uma das duplas mais populares do Brasil. Além disso, são conhecidos por sua forte presença digital e por manter uma imagem mais reservada em relação à vida pessoal.
+
+Com uma carreira consolidada, a dupla segue como uma das grandes referências do sertanejo contemporâneo</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+            <h2 class="text-center pt-5">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria">  </div>
+</section>
+
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="fogos.jpg"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="inicio.jpg" class="img-fluid rounded-5"
+                            loading="lazy">
+                    </div>
+                </div>
+                <div class="row mt-4  justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="pai.jpg" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="preto.jpg"
+                            class="img-fluid rounded-5" loading="lazy"> 
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
+                                mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Bruna. Projeto Alura da escola Allyrio</p>
+    </footer>
+    <script src="script.js"></script>
+  
+</body>
+
+</html>
